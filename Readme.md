@@ -44,7 +44,9 @@ The big command, including all the config and network files, would be:
 - **Geth PoW:** `npx caliper launch manager --caliper-workspace ./caliperWorkspace/ --caliper-benchconfig benchmarks/configGethPOW.yaml --caliper-networkconfig networks/networkConfigGeth.json`
 - **Geth PoA:** `npx caliper launch manager --caliper-workspace ./caliperWorkspace/ --caliper-benchconfig benchmarks/configGethPOA.yaml --caliper-networkconfig networks/networkConfigGeth.json`
 
-_NOTE: You can actually run the rounds of PoA with PoW and viceversa, since the network is the same (not at the same time though, just I have in my [ethereum-private-blockchain](https://github.com/fransotodev/geth-private-blockchain) repo 2 nodes that can actually start running a PoW or a PoA network indifferently). However, PoW is CPU intensive and I have a laptop, not a mining farm, so PoW rounds in the benchmark are pretty small (3200tx total) compared with PoA or ganache rounds (13000tx total each)_
+_NOTE: You can actually run the rounds of PoA with PoW and viceversa, since the network is the same (not at the same time though, just I have in my [ethereum-private-blockchain](https://github.com/fransotodev/geth-private-blockchain) repo 2 nodes that can actually start running a PoW or a PoA network indifferently)._
+
+_However, PoW is CPU intensive and I have a laptop, not a mining farm, so PoW rounds in the benchmark are pretty small (3200tx total) compared with PoA or ganache rounds (13000tx total each)_
 
 ## Changes I made in Hyperledger Caliper
 
