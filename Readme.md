@@ -1,4 +1,4 @@
-_This readme is in progress. More explanation comming on the [Changes I made secion](##changes-i-made)_
+_This readme is in progress. More explanation comming on the [Changes I made secion](#changes-i-made-in-hyperledger-caliper)_
 
 _Also more explanation on the network and benchmark configs so you can run them too!_
 
