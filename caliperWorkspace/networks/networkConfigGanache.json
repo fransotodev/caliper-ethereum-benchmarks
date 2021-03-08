@@ -1,0 +1,25 @@
+{
+    "caliper": {
+        "blockchain": "ethereum"
+    },
+    "ethereum": {
+        "url": "ws://localhost:8545",
+        "contractDeployerAddress": "0x18251E4dCcfcf8F68fE500381ce418ac3b6E24DF",
+        "contractDeployerAddressPrivateKey": "0xa59324a90dfcb998dc126ab493e485dffded6fffa5dcd91900e6f6a34f793662",
+        "contractDeployerAddressPassword": "",
+        "fromAddress": "0x439f20c8FBAFd3D21E208C73Fa71d272eC6bA938",
+        "fromAddressPrivateKey": "0x8d45d4510d4cbdd129dd5a1b660d4985713719e2d9f825f85b0c1063415f9eb2",
+        "fromAddressPassword": "",
+        "transactionConfirmationBlocks": 1,
+        "contracts": {
+            "DatasetBidRegistry": {
+                "estimateGas": true,
+                "path": "src/DatasetBidRegistry.json",
+                "gas": {
+                    "register": 3000000,
+                    "offer": 3000000 
+                }
+            }
+        }
+    }
+}
