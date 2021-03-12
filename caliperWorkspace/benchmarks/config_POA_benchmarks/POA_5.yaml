@@ -7,7 +7,7 @@ test:
     number: 1
   rounds:
     #---------------------------------------------------------------Register increasing send rate:---------------------------------------------------------------
-    - label: Register 100tx @ 10 TPS
+    - label: Register 10tx @ 10 TPS
       contractId: DatasetBidRegistry
       txNumber: 10
       rateControl:
@@ -19,7 +19,7 @@ test:
           contractId: DatasetBidRegistry
           contractVersion: 0.0.1
 
-    - label: Register 100tx @ 20 TPS
+    - label: Register 20tx @ 20 TPS
       contractId: DatasetBidRegistry
       txNumber: 20
       rateControl:
@@ -31,7 +31,7 @@ test:
           contractId: DatasetBidRegistry
           contractVersion: 0.0.1
 
-    - label: Register 100tx @ 30 TPS
+    - label: Register 30tx @ 30 TPS
       contractId: DatasetBidRegistry
       txNumber: 30
       rateControl:
@@ -43,7 +43,7 @@ test:
           contractId: DatasetBidRegistry
           contractVersion: 0.0.1
 
-    - label: Register 100tx @ 40 TPS
+    - label: Register 40tx @ 40 TPS
       contractId: DatasetBidRegistry
       txNumber: 40
       rateControl:
@@ -55,7 +55,7 @@ test:
           contractId: DatasetBidRegistry
           contractVersion: 0.0.1
 
-    - label: Register 100tx @ 50 TPS
+    - label: Register 50tx @ 50 TPS
       contractId: DatasetBidRegistry
       txNumber: 50
       rateControl:
@@ -67,7 +67,7 @@ test:
           contractId: DatasetBidRegistry
           contractVersion: 0.0.1
 
-    - label: Register 100tx @ 60 TPS
+    - label: Register 60tx @ 60 TPS
       contractId: DatasetBidRegistry
       txNumber: 60
       rateControl:
@@ -79,7 +79,7 @@ test:
           contractId: DatasetBidRegistry
           contractVersion: 0.0.1
 
-    - label: Register 100tx @ 70 TPS
+    - label: Register 70tx @ 70 TPS
       contractId: DatasetBidRegistry
       txNumber: 70
       rateControl:
@@ -91,7 +91,7 @@ test:
           contractId: DatasetBidRegistry
           contractVersion: 0.0.1
 
-    - label: Register 100tx @ 80 TPS
+    - label: Register 80tx @ 80 TPS
       contractId: DatasetBidRegistry
       txNumber: 80
       rateControl:
@@ -103,7 +103,7 @@ test:
           contractId: DatasetBidRegistry
           contractVersion: 0.0.1
 
-    - label: Register 100tx @ 90 TPS
+    - label: Register 90tx @ 90 TPS
       contractId: DatasetBidRegistry
       txNumber: 90
       rateControl:
