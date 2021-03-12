@@ -1,6 +1,6 @@
 ---
 test:
-  name: POA 1 - DatasetBidRegistry Benchmark - Geth POA
+  name: POA 5 - DatasetBidRegistry Benchmark - Geth POA
   description: Benchmark for DatasetBidRegistry Ethereum Smart Contract
   workers:
     type: local
