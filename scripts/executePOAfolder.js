@@ -9,10 +9,7 @@ const listConfigs = fs.readdirSync(
 
 listConfigs.map(async (configFile, index) => {
   console.log(index);
-  listenerFile = {};
-  listenerFile[
-    `${configFile}`
-  ] = execSync(
+  execSync(
     `npx caliper launch manager --caliper-workspace ${__dirname}/../caliperWorkspace/ --caliper-benchconfig benchmarks/config_POA_benchmarks/${configFile} --caliper-networkconfig networks/networkConfigGeth.json`,
     { stdio: "inherit" }
   );
