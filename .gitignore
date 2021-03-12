@@ -1,5 +1,5 @@
 node_modules/*
-!node_modules/@hyperledger
-caliper.log
-report.html
+caliperWorkspace/caliper.log
+caliperWorkspace/report.html
 caliperWorkspace/src/*.json
+!node_modules/@hyperledger
