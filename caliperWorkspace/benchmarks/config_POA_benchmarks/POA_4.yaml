@@ -1,0 +1,139 @@
+---
+test:
+  name: POA 2 - DatasetBidRegistry Benchmark - Geth POA
+  description: Benchmark for DatasetBidRegistry Ethereum Smart Contract
+  workers:
+    type: local
+    number: 1
+  rounds:
+    #---------------------------------------------------------------Offer increasing send rate:---------------------------------------------------------------
+    - label: Offer 100tx @ 10 TPS
+      contractId: DatasetBidRegistry
+      txNumber: 1000
+      rateControl:
+        type: fixed-rate
+        opts: { tps: 100 }
+      workload:
+        module: benchmarks/workloads/offer.js
+        arguments:
+          contractId: DatasetBidRegistry
+          contractVersion: 0.0.1
+
+    - label: Offer 100tx @ 20 TPS
+      contractId: DatasetBidRegistry
+      txNumber: 1000
+      rateControl:
+        type: fixed-rate
+        opts: { tps: 200 }
+      workload:
+        module: benchmarks/workloads/offer.js
+        arguments:
+          contractId: DatasetBidRegistry
+          contractVersion: 0.0.1
+
+    - label: Offer 100tx @ 30 TPS
+      contractId: DatasetBidRegistry
+      txNumber: 1000
+      rateControl:
+        type: fixed-rate
+        opts: { tps: 300 }
+      workload:
+        module: benchmarks/workloads/offer.js
+        arguments:
+          contractId: DatasetBidRegistry
+          contractVersion: 0.0.1
+
+    - label: Offer 100tx @ 40 TPS
+      contractId: DatasetBidRegistry
+      txNumber: 1000
+      rateControl:
+        type: fixed-rate
+        opts: { tps: 400 }
+      workload:
+        module: benchmarks/workloads/offer.js
+        arguments:
+          contractId: DatasetBidRegistry
+          contractVersion: 0.0.1
+
+    - label: Offer 100tx @ 50 TPS
+      contractId: DatasetBidRegistry
+      txNumber: 1000
+      rateControl:
+        type: fixed-rate
+        opts: { tps: 500 }
+      workload:
+        module: benchmarks/workloads/offer.js
+        arguments:
+          contractId: DatasetBidRegistry
+          contractVersion: 0.0.1
+
+    - label: Offer 100tx @ 60 TPS
+      contractId: DatasetBidRegistry
+      txNumber: 1000
+      rateControl:
+        type: fixed-rate
+        opts: { tps: 600 }
+      workload:
+        module: benchmarks/workloads/offer.js
+        arguments:
+          contractId: DatasetBidRegistry
+          contractVersion: 0.0.1
+
+    - label: Offer 100tx @ 70 TPS
+      contractId: DatasetBidRegistry
+      txNumber: 1000
+      rateControl:
+        type: fixed-rate
+        opts: { tps: 700 }
+      workload:
+        module: benchmarks/workloads/offer.js
+        arguments:
+          contractId: DatasetBidRegistry
+          contractVersion: 0.0.1
+
+    - label: Offer 100tx @ 80 TPS
+      contractId: DatasetBidRegistry
+      txNumber: 1000
+      rateControl:
+        type: fixed-rate
+        opts: { tps: 800 }
+      workload:
+        module: benchmarks/workloads/offer.js
+        arguments:
+          contractId: DatasetBidRegistry
+          contractVersion: 0.0.1
+
+    - label: Offer 100tx @ 90 TPS
+      contractId: DatasetBidRegistry
+      txNumber: 1000
+      rateControl:
+        type: fixed-rate
+        opts: { tps: 900 }
+      workload:
+        module: benchmarks/workloads/offer.js
+        arguments:
+          contractId: DatasetBidRegistry
+          contractVersion: 0.0.1
+
+    - label: Offer 100tx @ 100 TPS
+      contractId: DatasetBidRegistry
+      txNumber: 1000
+      rateControl:
+        type: fixed-rate
+        opts: { tps: 1000 }
+      workload:
+        module: benchmarks/workloads/offer.js
+        arguments:
+          contractId: DatasetBidRegistry
+          contractVersion: 0.0.1
+
+monitors:
+  resource:
+    - module: process
+      options:
+        interval: 3
+        processes:
+          [{ command: "node", arguments: "caliper.js", multiOutput: "avg" }]
+      charting:
+        bar:
+          metrics: [all]
