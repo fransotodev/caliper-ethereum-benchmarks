@@ -2,4 +2,3 @@ node_modules/*
 caliperWorkspace/caliper.log
 caliperWorkspace/report.html
 caliperWorkspace/src/*.json
-!node_modules/@hyperledger

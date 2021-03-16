@@ -1,6 +1,6 @@
 ---
 test:
-  name: DatasetBidRegistry Benchmark - Ganache Simulation
+  name: DatasetBidRegistry Smart Contract Benchmark - Ganache Simulation
   description: Benchmark for DatasetBidRegistry Ethereum Smart Contract
   workers:
     type: local
@@ -19,459 +19,459 @@ test:
           contractId: DatasetBidRegistry
           contractVersion: 0.0.1
 
-    - label: Register 100tx @ 20 TPS
-      contractId: DatasetBidRegistry
-      txNumber: 100
-      rateControl:
-        type: fixed-rate
-        opts: { tps: 20 }
-      workload:
-        module: benchmarks/workloads/register.js
-        arguments:
-          contractId: DatasetBidRegistry
-          contractVersion: 0.0.1
+    # - label: Register 100tx @ 20 TPS
+    #   contractId: DatasetBidRegistry
+    #   txNumber: 100
+    #   rateControl:
+    #     type: fixed-rate
+    #     opts: { tps: 20 }
+    #   workload:
+    #     module: benchmarks/workloads/register.js
+    #     arguments:
+    #       contractId: DatasetBidRegistry
+    #       contractVersion: 0.0.1
 
-    - label: Register 100tx @ 30 TPS
-      contractId: DatasetBidRegistry
-      txNumber: 100
-      rateControl:
-        type: fixed-rate
-        opts: { tps: 30 }
-      workload:
-        module: benchmarks/workloads/register.js
-        arguments:
-          contractId: DatasetBidRegistry
-          contractVersion: 0.0.1
+    # - label: Register 100tx @ 30 TPS
+    #   contractId: DatasetBidRegistry
+    #   txNumber: 100
+    #   rateControl:
+    #     type: fixed-rate
+    #     opts: { tps: 30 }
+    #   workload:
+    #     module: benchmarks/workloads/register.js
+    #     arguments:
+    #       contractId: DatasetBidRegistry
+    #       contractVersion: 0.0.1
 
-    - label: Register 100tx @ 40 TPS
-      contractId: DatasetBidRegistry
-      txNumber: 100
-      rateControl:
-        type: fixed-rate
-        opts: { tps: 40 }
-      workload:
-        module: benchmarks/workloads/register.js
-        arguments:
-          contractId: DatasetBidRegistry
-          contractVersion: 0.0.1
+    # - label: Register 100tx @ 40 TPS
+    #   contractId: DatasetBidRegistry
+    #   txNumber: 100
+    #   rateControl:
+    #     type: fixed-rate
+    #     opts: { tps: 40 }
+    #   workload:
+    #     module: benchmarks/workloads/register.js
+    #     arguments:
+    #       contractId: DatasetBidRegistry
+    #       contractVersion: 0.0.1
 
-    - label: Register 100tx @ 50 TPS
-      contractId: DatasetBidRegistry
-      txNumber: 100
-      rateControl:
-        type: fixed-rate
-        opts: { tps: 50 }
-      workload:
-        module: benchmarks/workloads/register.js
-        arguments:
-          contractId: DatasetBidRegistry
-          contractVersion: 0.0.1
+    # - label: Register 100tx @ 50 TPS
+    #   contractId: DatasetBidRegistry
+    #   txNumber: 100
+    #   rateControl:
+    #     type: fixed-rate
+    #     opts: { tps: 50 }
+    #   workload:
+    #     module: benchmarks/workloads/register.js
+    #     arguments:
+    #       contractId: DatasetBidRegistry
+    #       contractVersion: 0.0.1
 
-    - label: Register 100tx @ 60 TPS
-      contractId: DatasetBidRegistry
-      txNumber: 100
-      rateControl:
-        type: fixed-rate
-        opts: { tps: 60 }
-      workload:
-        module: benchmarks/workloads/register.js
-        arguments:
-          contractId: DatasetBidRegistry
-          contractVersion: 0.0.1
+    # - label: Register 100tx @ 60 TPS
+    #   contractId: DatasetBidRegistry
+    #   txNumber: 100
+    #   rateControl:
+    #     type: fixed-rate
+    #     opts: { tps: 60 }
+    #   workload:
+    #     module: benchmarks/workloads/register.js
+    #     arguments:
+    #       contractId: DatasetBidRegistry
+    #       contractVersion: 0.0.1
 
-    - label: Register 100tx @ 70 TPS
-      contractId: DatasetBidRegistry
-      txNumber: 100
-      rateControl:
-        type: fixed-rate
-        opts: { tps: 70 }
-      workload:
-        module: benchmarks/workloads/register.js
-        arguments:
-          contractId: DatasetBidRegistry
-          contractVersion: 0.0.1
+    # - label: Register 100tx @ 70 TPS
+    #   contractId: DatasetBidRegistry
+    #   txNumber: 100
+    #   rateControl:
+    #     type: fixed-rate
+    #     opts: { tps: 70 }
+    #   workload:
+    #     module: benchmarks/workloads/register.js
+    #     arguments:
+    #       contractId: DatasetBidRegistry
+    #       contractVersion: 0.0.1
 
-    - label: Register 100tx @ 80 TPS
-      contractId: DatasetBidRegistry
-      txNumber: 100
-      rateControl:
-        type: fixed-rate
-        opts: { tps: 80 }
-      workload:
-        module: benchmarks/workloads/register.js
-        arguments:
-          contractId: DatasetBidRegistry
-          contractVersion: 0.0.1
+    # - label: Register 100tx @ 80 TPS
+    #   contractId: DatasetBidRegistry
+    #   txNumber: 100
+    #   rateControl:
+    #     type: fixed-rate
+    #     opts: { tps: 80 }
+    #   workload:
+    #     module: benchmarks/workloads/register.js
+    #     arguments:
+    #       contractId: DatasetBidRegistry
+    #       contractVersion: 0.0.1
 
-    - label: Register 100tx @ 90 TPS
-      contractId: DatasetBidRegistry
-      txNumber: 100
-      rateControl:
-        type: fixed-rate
-        opts: { tps: 90 }
-      workload:
-        module: benchmarks/workloads/register.js
-        arguments:
-          contractId: DatasetBidRegistry
-          contractVersion: 0.0.1
+    # - label: Register 100tx @ 90 TPS
+    #   contractId: DatasetBidRegistry
+    #   txNumber: 100
+    #   rateControl:
+    #     type: fixed-rate
+    #     opts: { tps: 90 }
+    #   workload:
+    #     module: benchmarks/workloads/register.js
+    #     arguments:
+    #       contractId: DatasetBidRegistry
+    #       contractVersion: 0.0.1
 
-    - label: Register 100tx @ 100 TPS
-      contractId: DatasetBidRegistry
-      txNumber: 100
-      rateControl:
-        type: fixed-rate
-        opts: { tps: 100 }
-      workload:
-        module: benchmarks/workloads/register.js
-        arguments:
-          contractId: DatasetBidRegistry
-          contractVersion: 0.0.1
+    # - label: Register 100tx @ 100 TPS
+    #   contractId: DatasetBidRegistry
+    #   txNumber: 100
+    #   rateControl:
+    #     type: fixed-rate
+    #     opts: { tps: 100 }
+    #   workload:
+    #     module: benchmarks/workloads/register.js
+    #     arguments:
+    #       contractId: DatasetBidRegistry
+    #       contractVersion: 0.0.1
 
-    #---------------------------------------------------------------Offer increasing send rate:---------------------------------------------------------------
+    # #---------------------------------------------------------------Offer increasing send rate:---------------------------------------------------------------
 
-    - label: Offer 100tx @ 10 TPS
-      contractId: DatasetBidRegistry
-      txNumber: 100
-      rateControl:
-        type: fixed-rate
-        opts: { tps: 10 }
-      workload:
-        module: benchmarks/workloads/offer.js
-        arguments:
-          contractId: DatasetBidRegistry
-          contractVersion: 0.0.1
+    # - label: Offer 100tx @ 10 TPS
+    #   contractId: DatasetBidRegistry
+    #   txNumber: 100
+    #   rateControl:
+    #     type: fixed-rate
+    #     opts: { tps: 10 }
+    #   workload:
+    #     module: benchmarks/workloads/offer.js
+    #     arguments:
+    #       contractId: DatasetBidRegistry
+    #       contractVersion: 0.0.1
 
-    - label: Offer 100tx @ 20 TPS
-      contractId: DatasetBidRegistry
-      txNumber: 100
-      rateControl:
-        type: fixed-rate
-        opts: { tps: 20 }
-      workload:
-        module: benchmarks/workloads/offer.js
-        arguments:
-          contractId: DatasetBidRegistry
-          contractVersion: 0.0.1
+    # - label: Offer 100tx @ 20 TPS
+    #   contractId: DatasetBidRegistry
+    #   txNumber: 100
+    #   rateControl:
+    #     type: fixed-rate
+    #     opts: { tps: 20 }
+    #   workload:
+    #     module: benchmarks/workloads/offer.js
+    #     arguments:
+    #       contractId: DatasetBidRegistry
+    #       contractVersion: 0.0.1
 
-    - label: Offer 100tx @ 30 TPS
-      contractId: DatasetBidRegistry
-      txNumber: 100
-      rateControl:
-        type: fixed-rate
-        opts: { tps: 30 }
-      workload:
-        module: benchmarks/workloads/offer.js
-        arguments:
-          contractId: DatasetBidRegistry
-          contractVersion: 0.0.1
+    # - label: Offer 100tx @ 30 TPS
+    #   contractId: DatasetBidRegistry
+    #   txNumber: 100
+    #   rateControl:
+    #     type: fixed-rate
+    #     opts: { tps: 30 }
+    #   workload:
+    #     module: benchmarks/workloads/offer.js
+    #     arguments:
+    #       contractId: DatasetBidRegistry
+    #       contractVersion: 0.0.1
 
-    - label: Offer 100tx @ 40 TPS
-      contractId: DatasetBidRegistry
-      txNumber: 100
-      rateControl:
-        type: fixed-rate
-        opts: { tps: 40 }
-      workload:
-        module: benchmarks/workloads/offer.js
-        arguments:
-          contractId: DatasetBidRegistry
-          contractVersion: 0.0.1
+    # - label: Offer 100tx @ 40 TPS
+    #   contractId: DatasetBidRegistry
+    #   txNumber: 100
+    #   rateControl:
+    #     type: fixed-rate
+    #     opts: { tps: 40 }
+    #   workload:
+    #     module: benchmarks/workloads/offer.js
+    #     arguments:
+    #       contractId: DatasetBidRegistry
+    #       contractVersion: 0.0.1
 
-    - label: Offer 100tx @ 50 TPS
-      contractId: DatasetBidRegistry
-      txNumber: 100
-      rateControl:
-        type: fixed-rate
-        opts: { tps: 50 }
-      workload:
-        module: benchmarks/workloads/offer.js
-        arguments:
-          contractId: DatasetBidRegistry
-          contractVersion: 0.0.1
+    # - label: Offer 100tx @ 50 TPS
+    #   contractId: DatasetBidRegistry
+    #   txNumber: 100
+    #   rateControl:
+    #     type: fixed-rate
+    #     opts: { tps: 50 }
+    #   workload:
+    #     module: benchmarks/workloads/offer.js
+    #     arguments:
+    #       contractId: DatasetBidRegistry
+    #       contractVersion: 0.0.1
 
-    - label: Offer 100tx @ 60 TPS
-      contractId: DatasetBidRegistry
-      txNumber: 100
-      rateControl:
-        type: fixed-rate
-        opts: { tps: 60 }
-      workload:
-        module: benchmarks/workloads/offer.js
-        arguments:
-          contractId: DatasetBidRegistry
-          contractVersion: 0.0.1
+    # - label: Offer 100tx @ 60 TPS
+    #   contractId: DatasetBidRegistry
+    #   txNumber: 100
+    #   rateControl:
+    #     type: fixed-rate
+    #     opts: { tps: 60 }
+    #   workload:
+    #     module: benchmarks/workloads/offer.js
+    #     arguments:
+    #       contractId: DatasetBidRegistry
+    #       contractVersion: 0.0.1
 
-    - label: Offer 100tx @ 70 TPS
-      contractId: DatasetBidRegistry
-      txNumber: 100
-      rateControl:
-        type: fixed-rate
-        opts: { tps: 70 }
-      workload:
-        module: benchmarks/workloads/offer.js
-        arguments:
-          contractId: DatasetBidRegistry
-          contractVersion: 0.0.1
+    # - label: Offer 100tx @ 70 TPS
+    #   contractId: DatasetBidRegistry
+    #   txNumber: 100
+    #   rateControl:
+    #     type: fixed-rate
+    #     opts: { tps: 70 }
+    #   workload:
+    #     module: benchmarks/workloads/offer.js
+    #     arguments:
+    #       contractId: DatasetBidRegistry
+    #       contractVersion: 0.0.1
 
-    - label: Offer 100tx @ 80 TPS
-      contractId: DatasetBidRegistry
-      txNumber: 100
-      rateControl:
-        type: fixed-rate
-        opts: { tps: 80 }
-      workload:
-        module: benchmarks/workloads/offer.js
-        arguments:
-          contractId: DatasetBidRegistry
-          contractVersion: 0.0.1
+    # - label: Offer 100tx @ 80 TPS
+    #   contractId: DatasetBidRegistry
+    #   txNumber: 100
+    #   rateControl:
+    #     type: fixed-rate
+    #     opts: { tps: 80 }
+    #   workload:
+    #     module: benchmarks/workloads/offer.js
+    #     arguments:
+    #       contractId: DatasetBidRegistry
+    #       contractVersion: 0.0.1
 
-    - label: Offer 100tx @ 90 TPS
-      contractId: DatasetBidRegistry
-      txNumber: 100
-      rateControl:
-        type: fixed-rate
-        opts: { tps: 90 }
-      workload:
-        module: benchmarks/workloads/offer.js
-        arguments:
-          contractId: DatasetBidRegistry
-          contractVersion: 0.0.1
+    # - label: Offer 100tx @ 90 TPS
+    #   contractId: DatasetBidRegistry
+    #   txNumber: 100
+    #   rateControl:
+    #     type: fixed-rate
+    #     opts: { tps: 90 }
+    #   workload:
+    #     module: benchmarks/workloads/offer.js
+    #     arguments:
+    #       contractId: DatasetBidRegistry
+    #       contractVersion: 0.0.1
 
-    - label: Offer 100tx @ 100 TPS
-      contractId: DatasetBidRegistry
-      txNumber: 100
-      rateControl:
-        type: fixed-rate
-        opts: { tps: 100 }
-      workload:
-        module: benchmarks/workloads/offer.js
-        arguments:
-          contractId: DatasetBidRegistry
-          contractVersion: 0.0.1
+    # - label: Offer 100tx @ 100 TPS
+    #   contractId: DatasetBidRegistry
+    #   txNumber: 100
+    #   rateControl:
+    #     type: fixed-rate
+    #     opts: { tps: 100 }
+    #   workload:
+    #     module: benchmarks/workloads/offer.js
+    #     arguments:
+    #       contractId: DatasetBidRegistry
+    #       contractVersion: 0.0.1
 
-    #---------------------------------------------------------------Register increasing number of transactions:---------------------------------------------------------------
-    - label: Register 100tx @ 100 TPS
-      contractId: DatasetBidRegistry
-      txNumber: 100
-      rateControl:
-        type: fixed-rate
-        opts: { tps: 100 }
-      workload:
-        module: benchmarks/workloads/register.js
-        arguments:
-          contractId: DatasetBidRegistry
-          contractVersion: 0.0.1
-    - label: Register 200tx @ 100 TPS
-      contractId: DatasetBidRegistry
-      txNumber: 200
-      rateControl:
-        type: fixed-rate
-        opts: { tps: 100 }
-      workload:
-        module: benchmarks/workloads/register.js
-        arguments:
-          contractId: DatasetBidRegistry
-          contractVersion: 0.0.1
-    - label: Register 300tx @ 100 TPS
-      contractId: DatasetBidRegistry
-      txNumber: 300
-      rateControl:
-        type: fixed-rate
-        opts: { tps: 100 }
-      workload:
-        module: benchmarks/workloads/register.js
-        arguments:
-          contractId: DatasetBidRegistry
-          contractVersion: 0.0.1
-    - label: Register 400tx @ 100 TPS
-      contractId: DatasetBidRegistry
-      txNumber: 400
-      rateControl:
-        type: fixed-rate
-        opts: { tps: 100 }
-      workload:
-        module: benchmarks/workloads/register.js
-        arguments:
-          contractId: DatasetBidRegistry
-          contractVersion: 0.0.1
-    - label: Register 500tx @ 100 TPS
-      contractId: DatasetBidRegistry
-      txNumber: 500
-      rateControl:
-        type: fixed-rate
-        opts: { tps: 100 }
-      workload:
-        module: benchmarks/workloads/register.js
-        arguments:
-          contractId: DatasetBidRegistry
-          contractVersion: 0.0.1
-    - label: Register 600tx @ 100 TPS
-      contractId: DatasetBidRegistry
-      txNumber: 600
-      rateControl:
-        type: fixed-rate
-        opts: { tps: 100 }
-      workload:
-        module: benchmarks/workloads/register.js
-        arguments:
-          contractId: DatasetBidRegistry
-          contractVersion: 0.0.1
-    - label: Register 700tx @ 100 TPS
-      contractId: DatasetBidRegistry
-      txNumber: 700
-      rateControl:
-        type: fixed-rate
-        opts: { tps: 100 }
-      workload:
-        module: benchmarks/workloads/register.js
-        arguments:
-          contractId: DatasetBidRegistry
-          contractVersion: 0.0.1
-    - label: Register 800tx @ 100 TPS
-      contractId: DatasetBidRegistry
-      txNumber: 800
-      rateControl:
-        type: fixed-rate
-        opts: { tps: 100 }
-      workload:
-        module: benchmarks/workloads/register.js
-        arguments:
-          contractId: DatasetBidRegistry
-          contractVersion: 0.0.1
-    - label: Register 900tx @ 100 TPS
-      contractId: DatasetBidRegistry
-      txNumber: 900
-      rateControl:
-        type: fixed-rate
-        opts: { tps: 100 }
-      workload:
-        module: benchmarks/workloads/register.js
-        arguments:
-          contractId: DatasetBidRegistry
-          contractVersion: 0.0.1
-    - label: Register 1000tx @ 100 TPS
-      contractId: DatasetBidRegistry
-      txNumber: 1000
-      rateControl:
-        type: fixed-rate
-        opts: { tps: 100 }
-      workload:
-        module: benchmarks/workloads/register.js
-        arguments:
-          contractId: DatasetBidRegistry
-          contractVersion: 0.0.1
+    # #---------------------------------------------------------------Register increasing number of transactions:---------------------------------------------------------------
+    # - label: Register 100tx @ 100 TPS
+    #   contractId: DatasetBidRegistry
+    #   txNumber: 100
+    #   rateControl:
+    #     type: fixed-rate
+    #     opts: { tps: 100 }
+    #   workload:
+    #     module: benchmarks/workloads/register.js
+    #     arguments:
+    #       contractId: DatasetBidRegistry
+    #       contractVersion: 0.0.1
+    # - label: Register 200tx @ 100 TPS
+    #   contractId: DatasetBidRegistry
+    #   txNumber: 200
+    #   rateControl:
+    #     type: fixed-rate
+    #     opts: { tps: 100 }
+    #   workload:
+    #     module: benchmarks/workloads/register.js
+    #     arguments:
+    #       contractId: DatasetBidRegistry
+    #       contractVersion: 0.0.1
+    # - label: Register 300tx @ 100 TPS
+    #   contractId: DatasetBidRegistry
+    #   txNumber: 300
+    #   rateControl:
+    #     type: fixed-rate
+    #     opts: { tps: 100 }
+    #   workload:
+    #     module: benchmarks/workloads/register.js
+    #     arguments:
+    #       contractId: DatasetBidRegistry
+    #       contractVersion: 0.0.1
+    # - label: Register 400tx @ 100 TPS
+    #   contractId: DatasetBidRegistry
+    #   txNumber: 400
+    #   rateControl:
+    #     type: fixed-rate
+    #     opts: { tps: 100 }
+    #   workload:
+    #     module: benchmarks/workloads/register.js
+    #     arguments:
+    #       contractId: DatasetBidRegistry
+    #       contractVersion: 0.0.1
+    # - label: Register 500tx @ 100 TPS
+    #   contractId: DatasetBidRegistry
+    #   txNumber: 500
+    #   rateControl:
+    #     type: fixed-rate
+    #     opts: { tps: 100 }
+    #   workload:
+    #     module: benchmarks/workloads/register.js
+    #     arguments:
+    #       contractId: DatasetBidRegistry
+    #       contractVersion: 0.0.1
+    # - label: Register 600tx @ 100 TPS
+    #   contractId: DatasetBidRegistry
+    #   txNumber: 600
+    #   rateControl:
+    #     type: fixed-rate
+    #     opts: { tps: 100 }
+    #   workload:
+    #     module: benchmarks/workloads/register.js
+    #     arguments:
+    #       contractId: DatasetBidRegistry
+    #       contractVersion: 0.0.1
+    # - label: Register 700tx @ 100 TPS
+    #   contractId: DatasetBidRegistry
+    #   txNumber: 700
+    #   rateControl:
+    #     type: fixed-rate
+    #     opts: { tps: 100 }
+    #   workload:
+    #     module: benchmarks/workloads/register.js
+    #     arguments:
+    #       contractId: DatasetBidRegistry
+    #       contractVersion: 0.0.1
+    # - label: Register 800tx @ 100 TPS
+    #   contractId: DatasetBidRegistry
+    #   txNumber: 800
+    #   rateControl:
+    #     type: fixed-rate
+    #     opts: { tps: 100 }
+    #   workload:
+    #     module: benchmarks/workloads/register.js
+    #     arguments:
+    #       contractId: DatasetBidRegistry
+    #       contractVersion: 0.0.1
+    # - label: Register 900tx @ 100 TPS
+    #   contractId: DatasetBidRegistry
+    #   txNumber: 900
+    #   rateControl:
+    #     type: fixed-rate
+    #     opts: { tps: 100 }
+    #   workload:
+    #     module: benchmarks/workloads/register.js
+    #     arguments:
+    #       contractId: DatasetBidRegistry
+    #       contractVersion: 0.0.1
+    # - label: Register 1000tx @ 100 TPS
+    #   contractId: DatasetBidRegistry
+    #   txNumber: 1000
+    #   rateControl:
+    #     type: fixed-rate
+    #     opts: { tps: 100 }
+    #   workload:
+    #     module: benchmarks/workloads/register.js
+    #     arguments:
+    #       contractId: DatasetBidRegistry
+    #       contractVersion: 0.0.1
 
-    #---------------------------------------------------------------Offer increasing number of transactions:---------------------------------------------------------------
-    - label: Offer 100tx @ 100 TPS
-      contractId: DatasetBidRegistry
-      txNumber: 100
-      rateControl:
-        type: fixed-rate
-        opts: { tps: 100 }
-      workload:
-        module: benchmarks/workloads/offer.js
-        arguments:
-          contractId: DatasetBidRegistry
-          contractVersion: 0.0.1
-    - label: Offer 200tx @ 100 TPS
-      contractId: DatasetBidRegistry
-      txNumber: 200
-      rateControl:
-        type: fixed-rate
-        opts: { tps: 100 }
-      workload:
-        module: benchmarks/workloads/offer.js
-        arguments:
-          contractId: DatasetBidRegistry
-          contractVersion: 0.0.1
-    - label: Offer 300tx @ 100 TPS
-      contractId: DatasetBidRegistry
-      txNumber: 300
-      rateControl:
-        type: fixed-rate
-        opts: { tps: 100 }
-      workload:
-        module: benchmarks/workloads/offer.js
-        arguments:
-          contractId: DatasetBidRegistry
-          contractVersion: 0.0.1
-    - label: Offer 400tx @ 100 TPS
-      contractId: DatasetBidRegistry
-      txNumber: 400
-      rateControl:
-        type: fixed-rate
-        opts: { tps: 100 }
-      workload:
-        module: benchmarks/workloads/offer.js
-        arguments:
-          contractId: DatasetBidRegistry
-          contractVersion: 0.0.1
-    - label: Offer 500tx @ 100 TPS
-      contractId: DatasetBidRegistry
-      txNumber: 500
-      rateControl:
-        type: fixed-rate
-        opts: { tps: 100 }
-      workload:
-        module: benchmarks/workloads/offer.js
-        arguments:
-          contractId: DatasetBidRegistry
-          contractVersion: 0.0.1
-    - label: Offer 600tx @ 100 TPS
-      contractId: DatasetBidRegistry
-      txNumber: 600
-      rateControl:
-        type: fixed-rate
-        opts: { tps: 100 }
-      workload:
-        module: benchmarks/workloads/offer.js
-        arguments:
-          contractId: DatasetBidRegistry
-          contractVersion: 0.0.1
-    - label: Offer 700tx @ 100 TPS
-      contractId: DatasetBidRegistry
-      txNumber: 700
-      rateControl:
-        type: fixed-rate
-        opts: { tps: 100 }
-      workload:
-        module: benchmarks/workloads/offer.js
-        arguments:
-          contractId: DatasetBidRegistry
-          contractVersion: 0.0.1
-    - label: Offer 800tx @ 100 TPS
-      contractId: DatasetBidRegistry
-      txNumber: 800
-      rateControl:
-        type: fixed-rate
-        opts: { tps: 100 }
-      workload:
-        module: benchmarks/workloads/offer.js
-        arguments:
-          contractId: DatasetBidRegistry
-          contractVersion: 0.0.1
-    - label: Offer 900tx @ 100 TPS
-      contractId: DatasetBidRegistry
-      txNumber: 900
-      rateControl:
-        type: fixed-rate
-        opts: { tps: 100 }
-      workload:
-        module: benchmarks/workloads/offer.js
-        arguments:
-          contractId: DatasetBidRegistry
-          contractVersion: 0.0.1
-    - label: Offer 1000tx @ 100 TPS
-      contractId: DatasetBidRegistry
-      txNumber: 1000
-      rateControl:
-        type: fixed-rate
-        opts: { tps: 100 }
-      workload:
-        module: benchmarks/workloads/offer.js
-        arguments:
-          contractId: DatasetBidRegistry
-          contractVersion: 0.0.1
+    # #---------------------------------------------------------------Offer increasing number of transactions:---------------------------------------------------------------
+    # - label: Offer 100tx @ 100 TPS
+    #   contractId: DatasetBidRegistry
+    #   txNumber: 100
+    #   rateControl:
+    #     type: fixed-rate
+    #     opts: { tps: 100 }
+    #   workload:
+    #     module: benchmarks/workloads/offer.js
+    #     arguments:
+    #       contractId: DatasetBidRegistry
+    #       contractVersion: 0.0.1
+    # - label: Offer 200tx @ 100 TPS
+    #   contractId: DatasetBidRegistry
+    #   txNumber: 200
+    #   rateControl:
+    #     type: fixed-rate
+    #     opts: { tps: 100 }
+    #   workload:
+    #     module: benchmarks/workloads/offer.js
+    #     arguments:
+    #       contractId: DatasetBidRegistry
+    #       contractVersion: 0.0.1
+    # - label: Offer 300tx @ 100 TPS
+    #   contractId: DatasetBidRegistry
+    #   txNumber: 300
+    #   rateControl:
+    #     type: fixed-rate
+    #     opts: { tps: 100 }
+    #   workload:
+    #     module: benchmarks/workloads/offer.js
+    #     arguments:
+    #       contractId: DatasetBidRegistry
+    #       contractVersion: 0.0.1
+    # - label: Offer 400tx @ 100 TPS
+    #   contractId: DatasetBidRegistry
+    #   txNumber: 400
+    #   rateControl:
+    #     type: fixed-rate
+    #     opts: { tps: 100 }
+    #   workload:
+    #     module: benchmarks/workloads/offer.js
+    #     arguments:
+    #       contractId: DatasetBidRegistry
+    #       contractVersion: 0.0.1
+    # - label: Offer 500tx @ 100 TPS
+    #   contractId: DatasetBidRegistry
+    #   txNumber: 500
+    #   rateControl:
+    #     type: fixed-rate
+    #     opts: { tps: 100 }
+    #   workload:
+    #     module: benchmarks/workloads/offer.js
+    #     arguments:
+    #       contractId: DatasetBidRegistry
+    #       contractVersion: 0.0.1
+    # - label: Offer 600tx @ 100 TPS
+    #   contractId: DatasetBidRegistry
+    #   txNumber: 600
+    #   rateControl:
+    #     type: fixed-rate
+    #     opts: { tps: 100 }
+    #   workload:
+    #     module: benchmarks/workloads/offer.js
+    #     arguments:
+    #       contractId: DatasetBidRegistry
+    #       contractVersion: 0.0.1
+    # - label: Offer 700tx @ 100 TPS
+    #   contractId: DatasetBidRegistry
+    #   txNumber: 700
+    #   rateControl:
+    #     type: fixed-rate
+    #     opts: { tps: 100 }
+    #   workload:
+    #     module: benchmarks/workloads/offer.js
+    #     arguments:
+    #       contractId: DatasetBidRegistry
+    #       contractVersion: 0.0.1
+    # - label: Offer 800tx @ 100 TPS
+    #   contractId: DatasetBidRegistry
+    #   txNumber: 800
+    #   rateControl:
+    #     type: fixed-rate
+    #     opts: { tps: 100 }
+    #   workload:
+    #     module: benchmarks/workloads/offer.js
+    #     arguments:
+    #       contractId: DatasetBidRegistry
+    #       contractVersion: 0.0.1
+    # - label: Offer 900tx @ 100 TPS
+    #   contractId: DatasetBidRegistry
+    #   txNumber: 900
+    #   rateControl:
+    #     type: fixed-rate
+    #     opts: { tps: 100 }
+    #   workload:
+    #     module: benchmarks/workloads/offer.js
+    #     arguments:
+    #       contractId: DatasetBidRegistry
+    #       contractVersion: 0.0.1
+    # - label: Offer 1000tx @ 100 TPS
+    #   contractId: DatasetBidRegistry
+    #   txNumber: 1000
+    #   rateControl:
+    #     type: fixed-rate
+    #     opts: { tps: 100 }
+    #   workload:
+    #     module: benchmarks/workloads/offer.js
+    #     arguments:
+    #       contractId: DatasetBidRegistry
+    #       contractVersion: 0.0.1
 
 monitors:
   resource:

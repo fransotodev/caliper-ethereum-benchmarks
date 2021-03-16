@@ -67,9 +67,9 @@ class OfferWorkload extends WorkloadModuleBase {
    */
   async submitTransaction() {
     const myArgs = {
-      contractId: this.contractId,
-      contractFunction: "offer",
-      contractArguments: ["0x18251E4dCcfcf8F68fE500381ce418ac3b6E24DF", "0", 1],
+      contract: this.contractId,
+      verb: "offer",
+      args: ["0x18251E4dCcfcf8F68fE500381ce418ac3b6E24DF", "0", 1],
       readOnly: false,
     };
     return this.sutAdapter.sendRequests(myArgs);
