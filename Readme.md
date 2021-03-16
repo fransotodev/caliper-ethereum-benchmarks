@@ -42,11 +42,21 @@ After that you will need to modify the contract build file to specify a gas big 
 
 Refer to the official docs if you have doubts [running it](https://hyperledger.github.io/caliper/).
 
+Install dependencies: `npm i`
+
 The big command, including all the config and network files, would be:
 
 - **Ganache:** `npx caliper launch manager --caliper-workspace ./caliperWorkspace/ --caliper-benchconfig benchmarks/configGanache.yaml --caliper-networkconfig networks/networkConfigGanache.json`
 - **Geth PoW:** `npx caliper launch manager --caliper-workspace ./caliperWorkspace/ --caliper-benchconfig benchmarks/configGethPOW.yaml --caliper-networkconfig networks/networkConfigGeth.json`
 - **Geth PoA:** `npx caliper launch manager --caliper-workspace ./caliperWorkspace/ --caliper-benchconfig benchmarks/configGethPOA.yaml --caliper-networkconfig networks/networkConfigGeth.json`
+
+As an alternative, you can run multiple benchmarks in a row from different config files (instead of a bug one), like I did with PoA blockchain. Instead of the previous big command, run:
+
+`node scripts/executePOAfolder.js` 
+
+and wait to finish those 10 benchmarks, you will find the results in `caliperWorkspace/benchmarks/results_POA_benchmarks/` (I provided my results as an example, you can delete them though)
+
+<br />
 
 _NOTE: You can actually run the rounds of PoA with PoW and viceversa, since the network is the same (not at the same time though, just I have in my [ethereum-private-blockchain](https://github.com/fransotodev/geth-private-blockchain) repo 2 nodes that can actually start running a PoW or a PoA network indifferently)._
 
