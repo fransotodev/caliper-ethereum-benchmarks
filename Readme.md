@@ -1,7 +1,3 @@
-_This readme is in progress. More explanation comming on the [Changes I made secion](#changes-i-made-in-hyperledger-caliper)_
-
-_Also more explanation on the network and benchmark configs so you can run them too!_
-
 # Welcome to my benchmark!
 
 This is a benchmark for an example Ethereum Smart Contract using Hyperledger Caliper. There are configurations for 3 different blockchains to do the Benchmark:
@@ -10,31 +6,29 @@ This is a benchmark for an example Ethereum Smart Contract using Hyperledger Cal
 - **Geth PoW:** Local Blockchain using the Go-Ethereum official implementation with the consensus algorithm Proof of Work
 - **Geth PoA:** Local Blockchain using the Go-Ethereum official implementation with the consensus algorithm Proof of Authority
 
-
 ## Configuration
 
 ### Ganache
 
 Refer to Ganache and Truffle docs [here](https://www.trufflesuite.com/) if this is the first time you use them.
 
-Ganache accounts used by Caliper are hardCoded in benchmarks/configGanache.yaml. Therefore you either need to change them with your ganache addresses or generate the same 10 accounts with ganache using the seed `source jewel review offer prosper reform tent carpet cry license hint lottery`
+Ganache accounts used by Caliper are hardcoded in benchmarks/configGanache.yaml. Therefore you either need to change them with your ganache addresses or generate the same 10 accounts with ganache using the seed `source jewel review offer prosper reform tent carpet cry license hint lottery`
 
 _Note: There accounts are for testing purposes, don't use them with real Ether ;)_
 
 ### geth PoW
 
-Run the network like I explain in [my other repo](https://www.github.com/fransotodev/geth-private-blockchain) and run the command below!
+Run the network like I explain in [my geth repo](https://www.github.com/fransotodev/geth-private-blockchain) and run the command below!
 
 ### geth PoA
 
-Run the network like I explain in [my other repo](https://www.github.com/fransotodev/geth-private-blockchain) and run the command below!
+Run the network like I explain in [my geth repo](https://www.github.com/fransotodev/geth-private-blockchain) and run the command below!
 
-## Deploy the Smart contract
+## Compile Smart contract
 
 I provided ganache and geth configs (geth based on [my other repo](https://www.github.com/fransotodev/geth-private-blockchain)) for truffle , just run:
 
-- Ganache: `truffle migrate --network development`
-- Geth: `truffle migrate --network geth`
+`truffle compile`
 
 After that you will need to modify the contract build file to specify a gas big enough for caliper not to complain. You can do it manually or run `node scripts/prepareBuildedContract.js` (it sets it to 300000).
 
@@ -50,9 +44,11 @@ The big command, including all the config and network files, would be:
 - **Geth PoW:** `npx caliper launch manager --caliper-workspace ./caliperWorkspace/ --caliper-benchconfig benchmarks/configGethPOW.yaml --caliper-networkconfig networks/networkConfigGeth.json`
 - **Geth PoA:** `npx caliper launch manager --caliper-workspace ./caliperWorkspace/ --caliper-benchconfig benchmarks/configGethPOA.yaml --caliper-networkconfig networks/networkConfigGeth.json`
 
+This command will deploy the smart contract and execute the benchmark rounds.
+
 As an alternative, you can run multiple benchmarks in a row from different config files (instead of a bug one), like I did with PoA blockchain. Instead of the previous big command, run:
 
-`node scripts/executePOAfolder.js` 
+`node scripts/executePOAfolder.js`
 
 and wait to finish those 10 benchmarks, you will find the results in `caliperWorkspace/benchmarks/results_POA_benchmarks/` (I provided my results as an example, you can delete them though)
 
@@ -64,6 +60,4 @@ _However, PoW is CPU intensive and I have a laptop, not a mining farm, so PoW ro
 
 ## Problems running hyperledger Caliper?
 
-* Did you set the gas field in your smart Contract build file? Remember that you must set it every time you compile and migrate it
-
-* If you are using a windows machine and following the caliper docs, `caliper-cli bind` command won't work because it tries to launch a npm install command, but on windows it would be npm.cmd install (already submitted a PR with a fix for that one)
+- Did you set the gas field in your smart Contract build file? Remember that you must set it every time you compile and migrate it
