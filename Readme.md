@@ -58,6 +58,6 @@ _NOTE: You can actually run the rounds of PoA with PoW and viceversa, since the 
 
 _However, PoW is CPU intensive and I have a laptop, not a mining farm, so PoW rounds in the benchmark are pretty small (3200tx total) compared with PoA or ganache rounds (13000tx total each). Feel free to modify those rounds_
 
-## Problems running hyperledger Caliper?
+## Problems running Hyperledger Caliper?
 
-- Did you set the gas field in your smart Contract build file? Remember that you must set it every time you compile and migrate it
+- Did you set the gas field in your smart Contract build file? Remember that you must set it every time you compile it
